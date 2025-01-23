@@ -1,0 +1,15 @@
+@host= localhost:8000
+
+### Create Book
+POST /library/book
+Host: {{host}}
+Content-Type: application/json
+
+{
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "isbn": "9780743273565",
+    "publicationDate": "1925-04-10",
+    "publisher": "Charles Scribner's Sons",
+    "price": 7.99
+}
